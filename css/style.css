@@ -182,7 +182,9 @@ footer nav a:hover{
 label{
     display: none;
 }
-
+  
+  
+  
 /** Code css pour les responsive (min-width:0px) and (max-width:576px) **/
 @media(min-width:0px) and (max-width:576px) {
     #container {
@@ -224,8 +226,7 @@ label{
         flex-wrap: nowrap;
     }
   
-   
-}
+
 @media (min-width:576px) and (max-width:992px){
   
     #container {
@@ -279,5 +280,6 @@ label{
         width: 76%;
         margin-left: 7.7em;
     }
+    
 
 }
