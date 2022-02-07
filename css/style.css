@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#efeeeb ;
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+img{
+    display: block; 
+}
+label{
+    display: none;
+}
+#logo {
+    width: 25%;
+}
+#page_main {
+    width: 100%;
+}
+.iconeblue{
+    display:flex;
+    background-image: url("../images/blue-triangle.png");
+    background-repeat: repeat-x;
+   
+}
+.iconepink{
+    display:flex;
+    background-image: url("../images/pink-triangle.png");
+    background-repeat: repeat-x;   
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+header nav{
+    width: 75%;
+}
+
+header nav .menu{
+    display: flex;
+    align-items: center;
+    margin-left: 5em;
+}
+header nav .menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5em;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: #5f5150;
+    font-size: 0.8em;
+    margin-top: 1em;
+    font-weight: bold;
+    background-color: #fff;
+    padding-left: 0.6em;
+    padding-right: 00.6em;
+    margin-left: 1.3em;
+    border-radius: 5em;
+}
+header nav .menu a:hover {
+    background: #5f5150;
+    color: #f3f2ef;
+   
+}
+main{
+    width: 85%;
+    margin-left: 6em;
+}
+
+/** Aplication css main**/
+main article{
+    display: flex;
+    flex-wrap: wrap;
+}
+article :first-child{
+    width: 50%;
+}
+.contain_article{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.post_date {
+    margin-left: auto;
+}
+article {
+    margin-top: 2em;
+    background-color: white;
+
+}
+.social{
+    display: flex;
+    flex-wrap: wrap;
+ 
+    width: 100%;
+}
+.tag{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 75%;
+    color: #5f5150;
+}
+#icone{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; 
+    margin-left: 8em;
+}
+#icone img{
+    width: 100%;
+    margin-right: 0.5em;
+    background-color: #e0dddd;
+    border-radius: 200px;
+}
+#icone img:hover{
+    background-color: #5f5150
+}
+.bouton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+}
+.bouton a{
+    height: 2.5em;
+    text-decoration: none;
+    font-family: Arial, sans-secrif;
+    color: #5f5150;
+    font-size: 1em;
+    padding: 0.7em;
+    margin: 1em;
+    font-weight: bold;
+    border-radius: 5em;
+    
+}
+.bouton a:hover{
+    background: #5f5150;
+    color: #f3f2ef;
+
+
+}
+
+footer {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   background-color: #5f5150;
+   width: 100%;
+}
+footer p {
+    margin-left: 1em;
+}
+footer nav{
+    margin: auto;
+}
+footer nav a{
+    margin-left: 0.8em;
+    background-color: #5f5150;
+    color: white;
+    text-decoration: none;
+}
+footer nav a:hover{
+    color: black
+}
+label{
+    display: none;
+}
+
+/** Code css pour les responsive (min-width:0px) and (max-width:576px) **/
+@media(min-width:0px) and (max-width:576px) {
+    #container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    #page_main {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    main {
+        margin: auto;
+    }
+    article :nth-child(1) {
+        width: 100%;       
+    }
+    label {
+        width: 10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color:black;
+        cursor: pointer;    
+    }
+    header nav .menu {
+      display: none;
+    }
+    .contain_article{
+        margin: 1em;
+        width: 100%;
+    }
+    .social {
+        flex-wrap: nowrap;
+    }
+  
+   
+}
+@media (min-width:576px) and (max-width:992px){
+  
+    #container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    #logo{
+        width: 15%;
+    }
+    #page_main{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    main{
+        margin: auto;
+    }
+    article :nth-child(1)
+    {
+        width: 100%;
+       
+    }
+    main article{
+       
+        width: 75%;
+        margin-left: 8em;
+    }
+
+    header nav .menu {
+        display: flex;
+        align-items: center;
+     justify-content: space-evenly;
+        width: 75%;
+        flex-wrap: wrap;
+    }
+    .contain_article{
+        margin: 1em;
+        width: 100%;
+    }
+    .social{
+        flex-wrap: nowrap;
+    }
+    .iconeblue {
+        width: 76%;
+        margin-left: 7.7em;
+    }
+    .iconepink {
+        width: 76%;
+        margin-left: 7.7em;
+    }
+
+}
